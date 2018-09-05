@@ -14,10 +14,10 @@ def download_file(download_url, file_name):
     file.close()
     print("Completed")
 
-save_path = 'E:/paper/cvpr2017/'
-url = 'http://openaccess.thecvf.com/CVPR2017.py'
+save_path = 'E:/paper/eccv2018/'
+url = 'http://openaccess.thecvf.com/ECCV2018.py'
 html = getHtml(url)
-parttern = re.compile(r'\bcontent_cvpr_2017.*paper\.pdf\b')
+parttern = re.compile(r'\bcontent_ECCV_2018.*paper\.pdf\b')
 url_list = parttern.findall(html)
 
 for url in url_list:
